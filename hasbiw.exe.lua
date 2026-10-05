@@ -35,7 +35,7 @@ local Camera = Workspace.CurrentCamera
 
 -- Access Code Verification
 local ACCESS_CODE = "HASBIW.EXE ONTOP"
-local VERIFIED = false
+local VERIFIED = true
 
 -- Create Access Code GUI
 local AccessGui = Instance.new("ScreenGui")
@@ -187,7 +187,7 @@ local function VerifyAccess()
         AccessGui:Destroy()
         LoadMainScript()
     else
-        StatusLabel.Text = "✗ INVALID ACCESS CODE"
+        StatusLabel.Text = "PASSWORD SALAH TEMPEK"
         StatusLabel.TextColor3 = Color3.fromRGB(255, 50, 50)
         CodeFrame.BackgroundColor3 = Color3.fromRGB(50, 20, 20)
         wait(0.2)
